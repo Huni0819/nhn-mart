@@ -12,16 +12,16 @@ public class NhnMartShell {
         // 본인이름을 각자 맞게 영어로 변경
         // 홍길동 학생
         // -> hongGilDong or gilDong
-        Customer 본인이름 = new Customer(buyList);
+        Customer jaehun = new Customer(buyList);
 
         // 장바구니를 챙긴다.
-        본인이름.bring(mart.provideBasket());
+        jaehun.bring(mart.provideBasket());
 
         // 식품을 담는다.
-        본인이름.pickFoods(mart.getFoodStand());
+        jaehun.pickFoods(mart.getFoodStand());
 
         // 카운터에서 계산한다.
-        본인이름.payTox(mart.getCounter());
+        jaehun.payTox(mart.getCounter());
     }
 
     private static BuyList inputBuyListFromShell() {
