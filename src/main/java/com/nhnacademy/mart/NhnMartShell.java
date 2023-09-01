@@ -1,5 +1,8 @@
 package com.nhnacademy.mart;
 
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
 public class NhnMartShell {
 
     public static void main(String[] args) {
@@ -26,11 +29,16 @@ public class NhnMartShell {
 
     private static BuyList inputBuyListFromShell() {
         // TODO Scanner 입력을 받아 buyList 만들기
-
+        Scanner scanner = new Scanner(System.in);
         BuyList buyList = new BuyList();
 
-        buyList.add(???);
+        System.out.println("NHN 마트에 오신 것을 환영합니다. 사고 싶은 물건을 골라주세요.");
+        StringTokenizer st = new StringTokenizer(scanner.nextLine(), " ");
 
-        return null;
+        while (st.hasMoreTokens()) {
+            buyList.add(new BuyList.Item(st.nextToken(), Integer.valueOf(st.nextToken())));
+        }
+
+        return buyList;
     }
 }
