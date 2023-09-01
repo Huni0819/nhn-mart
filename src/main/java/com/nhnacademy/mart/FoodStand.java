@@ -15,16 +15,22 @@ public class FoodStand {
 
     // TODO add 메서드 구현
     public void add(Food food) {
+        logger.info(food.getName() + " 상품을 진열했습니다.");
         foods.add(food);
     }
 
     // TODO 장바구니에 담은 Food 삭제 구현
-    public void delete(Food food) {
-        if(!foods.contains(food)) {
-            logger.warn("진열 상품 삭제 실패 .. 해당 상품은 매대에 진열되어 있지 않습니다.");
-            throw new IllegalArgumentException("진열 상품 삭제 실패");
+    public Food delete(String foodName) {
+        for (Food food : foods) {
+            if (food.getName().equals(foodName)) {
+                Food temp = food;
+                logger.info(foodName + " 삭제");
+                foods.remove(food);
+                return food;
+            }
         }
-
-        foods.remove(food);
+        logger.warn("삭제 실패 .. 상품 매대에 " + foodName + " 상품이 존재 하지 않습니다.");
+        throw new IllegalArgumentException("삭제 실패");
     }
+
 }
