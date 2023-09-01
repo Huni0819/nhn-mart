@@ -8,6 +8,10 @@ public class BuyList {
     private static final Logger logger = LoggerFactory.getLogger(BuyList.class);
 
 
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
     private final ArrayList<Item> items = new ArrayList<>();
 
     // TODO add 메서드 생성
@@ -27,6 +31,14 @@ public class BuyList {
             }
             this.name = name;
             this.amount = amount;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getAmount() {
+            return amount;
         }
 
 
