@@ -1,5 +1,8 @@
 package com.nhnacademy.mart;
 
+/**
+ * NhnMart 클래스.
+ */
 public class NhnMart {
 
     private final FoodStand foodStand = new FoodStand();

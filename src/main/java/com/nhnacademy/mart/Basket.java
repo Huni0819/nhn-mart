@@ -1,7 +1,11 @@
 package com.nhnacademy.mart;
 
 import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * Basket 클래스.
+ */
 public class Basket {
     private final ArrayList<Food> foods = new ArrayList<>();
 
@@ -9,7 +13,7 @@ public class Basket {
         foods.add(food);
     }
 
-    public ArrayList<Food> getFoods() {
+    public List<Food> getFoods() {
         return foods;
     }
 }

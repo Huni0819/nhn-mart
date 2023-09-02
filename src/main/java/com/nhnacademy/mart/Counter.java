@@ -3,23 +3,32 @@ package com.nhnacademy.mart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Counter 클래스.
+ */
 public class Counter {
-    private static Logger logger = LoggerFactory.getLogger(Counter.class);
+    private static final Logger logger = LoggerFactory.getLogger(Counter.class);
 
-    // TODO pay 메서드 구현 (카운터에서 계산 처리 메서드)
+    /**
+     * pay 메소드.
+     *
+     * @param basket : 고객이 담은 상품 목록
+     * @param money  : 고객의 소지 금액
+     * @return : 결제 금액
+     */
     public int pay(Basket basket, int money) {
         int totalPrice = 0;
 
-        for(Food food : basket.getFoods()) {
+        for (Food food : basket.getFoods()) {
             totalPrice += food.getPrice();
         }
 
-        if(totalPrice > money) {
-            logger.warn("계산 실패 .. 가격은 " + totalPrice + "원 입니다. 소지금이 부족합니다.");
+        if (totalPrice > money) {
+            logger.warn("계산 실패 .. 가격은 {} 원 입니다. 소지금이 부족합니다.", totalPrice);
             throw new IllegalArgumentException("소지금이 부족합니다.");
         }
 
-        System.out.println("총 결제 금액 : " + totalPrice);
+        logger.info("총 결제 금액 : {}", totalPrice);
 
         return totalPrice;
     }
