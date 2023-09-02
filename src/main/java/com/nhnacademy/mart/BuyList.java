@@ -1,6 +1,7 @@
 package com.nhnacademy.mart;
 
 import java.util.ArrayList;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,6 +27,10 @@ public class BuyList {
         private final int amount;
 
         public Item(String name, int amount) {
+            if(StringUtils.isEmpty(name)) {
+                logger.warn("Item 추가 실패 .. 항목의 이름은 공백이나 Null일 수 없습니다");
+                throw new IllegalArgumentException("항목의 이름은 공백이나 Null일 수 없습니다.");
+            }
             if (amount <= 0) {
                 logger.warn("Item 추가 실패 .. 항목의 수량은 1보다 작을 수 없습니다.");
                 throw new IllegalArgumentException("항목의 수량은 1보다 작을 수 없습니다.");
