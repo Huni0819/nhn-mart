@@ -22,3 +22,5 @@ _
 nhnMart.log,f/b/fba13620102907627de8ae4313de612b6dec3b6c
 c
 3src/main/java/com/nhnacademy/mart/NhnMartShell.java,e/1/e18dfd24854668fbdcbd8c593414fd72ed1b1f12
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0

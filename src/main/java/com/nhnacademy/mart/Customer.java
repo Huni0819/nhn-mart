@@ -13,8 +13,15 @@ public class Customer {
     // 고객 장바구니
     private Basket basket;
 
+    private int money;
+
     public Customer(BuyList buyList) {
         this.buyList = buyList;
+        this.money = 20000;
+    }
+
+    public int getMoney() {
+        return money;
     }
 
     // 장바구니 챙기기
@@ -31,9 +38,13 @@ public class Customer {
         }
     }
 
+    // TODO payTox 메서드 구현
+    public void payTox(Counter counter) {
+        counter.pay(basket, getMoney());
+    }
 }
 
 
-// TODO payTox 메서드 구현
+
 
 
