@@ -19,6 +19,8 @@ public class Counter {
             throw new IllegalArgumentException("소지금이 부족합니다.");
         }
 
+        System.out.println("총 결제 금액 : " + totalPrice);
+
         return totalPrice;
     }
 

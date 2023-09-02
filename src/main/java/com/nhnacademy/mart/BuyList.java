@@ -9,16 +9,17 @@ public class BuyList {
     private static final Logger logger = LoggerFactory.getLogger(BuyList.class);
 
 
+    private final ArrayList<Item> items = new ArrayList<>();
+
+
     public ArrayList<Item> getItems() {
         return items;
     }
 
-    private final ArrayList<Item> items = new ArrayList<>();
-
     // TODO add 메서드 생성
     public void add(Item item) {
         logger.info(item.getName() + "상품 " + item.getAmount() + "개를 구매항목에 추가하였습니다.");
-        items.add(item);
+        getItems().add(item);
     }
 
 
