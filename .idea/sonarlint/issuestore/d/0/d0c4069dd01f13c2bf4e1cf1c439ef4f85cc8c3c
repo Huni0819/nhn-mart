@@ -1,7 +1,21 @@
 
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(÷åşÿÿÿÿ8˜º…¥1
+Y
+java:S2629"7Use the built-in formatting to construct this argument.(¹×¶¯ÿÿÿÿÿ8˜º…¥1
 T
-java:S1135	"2Complete the task associated to this TODO comment.(Í÷óñøÿÿÿÿ8¦ù¯Ç¤1
+java:S2629 "7Use the built-in formatting to construct this argument.(¸úŠ¤8¡İ…¥1
+T
+java:S1135"2Complete the task associated to this TODO comment.(Í÷óñøÿÿÿÿ8º…¥1
+c
+java:S3457"AFormat specifiers should be used instead of string concatenation.(Á’›úÿÿÿÿ8º…¥1
+Z
+java:S1854"8Remove this useless assignment to local variable "temp".(¶ôÒÓşÿÿÿÿ8Ÿº…¥1
 O
-java:S1135"2Complete the task associated to this TODO comment.(Á°šâ8Â„®Ç¤1
+java:S1135"2Complete the task associated to this TODO comment.(Á°šâ8Ÿº…¥1
 K
-java:S1068")Remove this unused "foods" private field.(‹Ş‚†ıÿÿÿÿ8¦ù¯Ç¤1
+java:S1481")Remove this unused "temp" local variable.(¶ôÒÓşÿÿÿÿ8Ÿº…¥1
+c
+java:S3457"AFormat specifiers should be used instead of string concatenation.(¹×¶¯ÿÿÿÿÿ8Ÿº…¥1
+^
+java:S3457 "AFormat specifiers should be used instead of string concatenation.(¸úŠ¤8©İ…¥1

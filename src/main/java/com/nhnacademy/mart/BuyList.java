@@ -16,6 +16,7 @@ public class BuyList {
 
     // TODO add 메서드 생성
     public void add(Item item) {
+        logger.info(item.getName() + "상품 " + item.getAmount() + "개를 구매항목에 추가하였습니다.");
         items.add(item);
     }
 

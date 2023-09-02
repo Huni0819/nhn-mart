@@ -15,3 +15,10 @@ _
 .src/main/java/com/nhnacademy/mart/NhnMart.java,f/a/fa5639c4c0a7db2f2f9482bb0eedac7e3bf1ed5a
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+;
+nhnMart.log,f/b/fba13620102907627de8ae4313de612b6dec3b6c
+c
+3src/main/java/com/nhnacademy/mart/NhnMartShell.java,e/1/e18dfd24854668fbdcbd8c593414fd72ed1b1f12
