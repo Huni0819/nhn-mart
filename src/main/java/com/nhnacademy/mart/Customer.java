@@ -40,7 +40,9 @@ public class Customer {
 
     // TODO payTox 메서드 구현
     public void payTox(Counter counter) {
-        counter.pay(basket, getMoney());
+        int totalPrice = counter.pay(basket, getMoney());
+
+        System.out.println("고객님 결제 후 잔액 : " + (getMoney() - totalPrice));
     }
 }
 
