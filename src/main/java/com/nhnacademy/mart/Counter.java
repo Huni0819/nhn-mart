@@ -18,8 +18,8 @@ public class Counter {
             logger.warn("계산 실패 .. 가격은 " + totalPrice + "원 입니다. 소지금이 부족합니다.");
         }
 
-        logger.info("총 가격은 " + totalPrice + "원 입니다.");
-        logger.info("고객님 결제 후 잔액 : " + (money - totalPrice));
+        System.out.println("총 가격은 " + totalPrice + "원 입니다.");
+        System.out.println("고객님 결제 후 잔액 : " + (money - totalPrice));
 
     }
 
